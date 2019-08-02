@@ -16,14 +16,14 @@ import (
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/dynamic/grpcdynamic"
+	"github.com/hoveychen/protoreflect/desc"
+	"github.com/hoveychen/protoreflect/dynamic/grpcdynamic"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/fullstorydev/grpcurl"
+	"github.com/hoveychen/grpcurl"
 )
 
 // RPCInvokeHandler returns an HTTP handler that can be used to invoke RPCs. The

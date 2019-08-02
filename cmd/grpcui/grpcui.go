@@ -19,9 +19,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fullstorydev/grpcurl"
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/grpcreflect"
+	"github.com/hoveychen/grpcurl"
+	"github.com/hoveychen/protoreflect/desc"
+	"github.com/hoveychen/protoreflect/grpcreflect"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
@@ -30,7 +30,7 @@ import (
 	"google.golang.org/grpc/metadata"
 	reflectpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
 
-	"github.com/fullstorydev/grpcui/standalone"
+	"github.com/hoveychen/grpcui/standalone"
 )
 
 var version = "dev build <no version set>"

@@ -11,12 +11,12 @@ import (
 	"path"
 	"text/template"
 
-	"github.com/jhump/protoreflect/desc"
-	"github.com/jhump/protoreflect/dynamic/grpcdynamic"
+	"github.com/hoveychen/protoreflect/desc"
+	"github.com/hoveychen/protoreflect/dynamic/grpcdynamic"
 	"google.golang.org/grpc"
 
-	"github.com/fullstorydev/grpcui"
-	"github.com/fullstorydev/grpcui/internal/resources/standalone"
+	"github.com/hoveychen/grpcui"
+	"github.com/hoveychen/grpcui/internal/resources/standalone"
 )
 
 const csrfCookieName = "_grpcui_csrf_token"

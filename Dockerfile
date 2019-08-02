@@ -8,12 +8,12 @@ RUN apk update && apk add --no-cache ca-certificates git gcc g++ libc-dev
 # create non-privileged group and user
 RUN addgroup -S grpcui && adduser -S grpcui -G grpcui
 
-WORKDIR /tmp/fullstorydev/grpcui
+WORKDIR /tmp/hoveychen/grpcui
 # copy just the files/sources we need to build grpcui
-COPY VERSION *.go go.* /tmp/fullstorydev/grpcui/
-COPY cmd /tmp/fullstorydev/grpcui/cmd
-COPY internal /tmp/fullstorydev/grpcui/internal
-COPY standalone /tmp/fullstorydev/grpcui/standalone
+COPY VERSION *.go go.* /tmp/hoveychen/grpcui/
+COPY cmd /tmp/hoveychen/grpcui/cmd
+COPY internal /tmp/hoveychen/grpcui/internal
+COPY standalone /tmp/hoveychen/grpcui/standalone
 # and build a completely static binary (so we can use
 # scratch as basis for the final image)
 ENV CGO_ENABLED=0

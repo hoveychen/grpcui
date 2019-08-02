@@ -28,7 +28,7 @@ release:
 .PHONY: docker
 docker:
 	@echo $(dev_build_version) > VERSION
-	docker build -t fullstorydev/grpcui:$(dev_build_version) .
+	docker build -t hoveychen/grpcui:$(dev_build_version) .
 	@rm VERSION
 
 .PHONY: checkgofmt
